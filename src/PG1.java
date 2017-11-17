@@ -13,8 +13,8 @@ public class PG1 {
         //System.setProperty("webdriver.chrome.driver","G:\\chromedriver.exe");
         //WebDriver driver = new ChromeDriver();
 
-        String baseUrl = "www.google.com";
-        String expectedTitle = "Welcome: Mercury Tours";
+        String baseUrl = "https://www.google.com/";
+        String expectedTitle = "Google";
         String actualTitle = "";
 
         // launch Fire fox and direct it to the Base URL

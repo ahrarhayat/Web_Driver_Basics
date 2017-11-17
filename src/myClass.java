@@ -7,7 +7,7 @@ public class myClass {
         System.setProperty("webdriver.gecko.driver", "C:\\selenium_ff_driver\\geckodriver-v0.19.0-win64\\geckodriver.exe");
 
         System.setProperty("webdriver.firefox.marionette", "C:\\geckodriver.exe");
-        WebDriver driver = new ChromeDriver();
+        WebDriver driver = new FirefoxDriver();
         String alertMessage = "";
 
         driver.get("https://web.skype.com/en/");
