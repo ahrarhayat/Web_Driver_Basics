@@ -13,12 +13,12 @@ public class TestSelenium {
     System.setProperty("webdriver.gecko.driver", "C:\\selenium_ff_driver\\geckodriver-v0.19.0-win64\\geckodriver.exe");
 
         WebDriver driver = new FirefoxDriver();
-        driver.get("http://117.58.241.66:8282/web/#/login");
+    //    driver.get("https://www.google.com.bd/?gws_rd=ssl");
 
 
 
-        System.out.println("Page title is: " + driver.getTitle());
-        String baseUrl = "http://117.58.241.66:8282/web/#/login";
+     //   System.out.println("Page title is: " + driver.getTitle());
+        String baseUrl = "https://www.google.com/";
         String expectedTitle = "Wikipedia";
         String actualTitle = "";
 
@@ -37,16 +37,19 @@ public class TestSelenium {
         } else {
             System.out.println("Test Failed");
         }
-        WebElement element = driver.findElement(By.xpath("//*[@id=\"loginFormID\"]/div[1]/input"));
-        element.sendKeys("famsadmin");
+        WebElement element = driver.findElement(By.xpath("//*[@id=\"lst-ib\"]"));
+        element.sendKeys("Genweb2");
 
 
-      element = driver.findElement(By.xpath("//*[@id=\"loginFormID\"]/div[2]/input"));
-     element.sendKeys("111111111");
-     element=driver.findElement(By.xpath("//*[@id=\"loginFormID\"]/div[3]/div[2]/button"));
-     element.click();
-     element=driver.findElement(By.xpath("/html/body/div[1]/div[1]/div[1]/div[3]/div/a[2]"));
-     element.click();
+
+
+      element = driver.findElement(By.xpath("/html/body/div/div[3]/form/div[2]/div[3]/center/input[1]"));
+        element.click();
+     //element=driver.findElement(By.xpath("//*[@id=\"loginFormID\"]/div[3]/div[2]/button"));
+        element = driver.findElement(By.xpath("/html/body/div[6]/div[3]/div[10]/div[1]/div[2]/div/div[2]/div[2]/div/div/div/div[2]/div/div[1]/div/div/h3/a"));
+        element.click();
+     //element=driver.findElement(By.xpath("/html/body/div[1]/div[1]/div[1]/div[3]/div/a[2]"));
+    // element.click();
 
 
 
