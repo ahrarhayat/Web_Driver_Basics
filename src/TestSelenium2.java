@@ -26,6 +26,7 @@ public class TestSelenium2 {
         // launch Fire fox and direct it to the Base URL
         driver.get(baseUrl);
 
+
         // get the actual value of the title
         actualTitle = driver.getTitle();
 
@@ -51,6 +52,7 @@ public class TestSelenium2 {
         driver.get(baseUrl);
        element=driver.findElement(By.xpath("/html/body/div[1]/div[4]/div[1]/p[2]/a"));
        element.click();
+       System.out.println("Test has been executed successfully");
 
 
 
